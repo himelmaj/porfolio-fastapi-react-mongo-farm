@@ -1,15 +1,11 @@
 import { Img } from "react-image";
 
 export function WhoAmI() {
-  // const {me} =  useImage({
-  //     srcList: 'https://pbs.twimg.com/media/DwgWEWmXQAEqSNh.png',
-
-  // })
   return (
-    <section className="grid grid-cols-2 gap-4 mt-60 mx-auto">
+    <section className="grid lg:grid-cols-2 md:grid-cols-1 place-content-around gap-4 mt-60 mx-10">
       <Img
-        src="https://pbs.twimg.com/media/DwgWEWmXQAEqSNh.png"
-        className="w-60 mx-auto"
+        src="https://media2.giphy.com/media/3ov9jWKJPnNrEe9iN2/giphy.gif?cid=ecf05e47hu0ay6e366v66o59wh0a4njqw6mmzx80utw1h299&ep=v1_gifs_related&rid=giphy.gif&ct=g"
+        className="w-80 mx-auto rounded-lg my-10"
       />
       <div>
         <h2 className="text-6xl title-font">Who is Himel?</h2>
