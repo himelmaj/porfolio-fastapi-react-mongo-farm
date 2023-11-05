@@ -1,7 +1,7 @@
 import { WhoAmI } from "../components/WhoAmI";
 import { SelectedWorks } from "../components/SelectedWorks";
 import { Contact } from "../components/Contact";
-import { ScrollToTopButton } from "../components/ButtonToTop";
+import { ScrollToTopButton } from "../components/ScrollToTopButton";
 
 export function Home() {
   return (
