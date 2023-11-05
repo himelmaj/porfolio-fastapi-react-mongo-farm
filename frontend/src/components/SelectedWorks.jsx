@@ -1,12 +1,11 @@
 import { WorkCard } from "./WorkCard";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export function SelectedWorks() {
   return (
-    <section className=" mt-60 mx-auto mb-15 items-end">
+    <section className="mt-60 mx-auto mb-15 flex flex-col items-center">
       <h2 className="text-6xl title-font text-center my-10">Select Works</h2>
-      <div className="flex flex-wrap gap-3 mx-3">
-        {/* WorkCard({ img, title, decription, url }) */}
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-3 mx-auto justify-center">
         <WorkCard
           url={
             "https://github.com/himelmaj/questionsapp-fastapi-react-mongo-farm/tree/main"
@@ -31,7 +30,7 @@ export function SelectedWorks() {
         <WorkCard
           url={"https://github.com/himelmaj/porfolio-fastapi-react-mongo-farm"}
           img={
-            "https://i.pinimg.com/564x/93/18/ea/9318ea49e912589c58df2de264390bdb.jpg"
+            "https://i.pinimg.com/564x/6c/68/51/6c6851b3d8e27b1ef6d687d482d8680b.jpg"
           }
           title={"Porfolio Project"}
           tech1={
@@ -50,7 +49,7 @@ export function SelectedWorks() {
         <WorkCard
           url={""}
           img={
-            "https://i.pinimg.com/564x/30/39/12/303912e150926d6749cdca58e8f8ba08.jpg"
+            "https://i.pinimg.com/564x/6c/68/51/6c6851b3d8e27b1ef6d687d482d8680b.jpg"
           }
           tech1={
             "https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png"
@@ -67,10 +66,12 @@ export function SelectedWorks() {
           }
         />
       </div>
-      <NavLink
-          to="/select work"
-          className={"px-3 min-w-md py-2 font-bold border-2 rounded-lg text-center justify-items-end"}>selected work
-        </NavLink>
+      <Link
+        to="/select work"
+        className="bg-blue-200 px-3 w-40 py-2 rounded-md inline-block hover:bg-blue-400 hover:cursor-pointer text-zinc-950 font-bold text-center"
+      >
+        works 
+      </Link>
     </section>
   );
 }

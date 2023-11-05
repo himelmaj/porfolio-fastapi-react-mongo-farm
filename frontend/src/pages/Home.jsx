@@ -1,5 +1,7 @@
 import { WhoAmI } from "../components/WhoAmI";
 import { SelectedWorks } from "../components/SelectedWorks";
+import { Contact } from "../components/Contact";
+import { ScrollToTopButton } from "../components/ButtonToTop";
 
 export function Home() {
   return (
@@ -15,6 +17,9 @@ export function Home() {
 
       <WhoAmI />
       <SelectedWorks />
+      <Contact />
+
+      <ScrollToTopButton/>
     </main>
   );
 }
