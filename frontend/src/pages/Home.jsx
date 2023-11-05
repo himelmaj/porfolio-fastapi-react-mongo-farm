@@ -14,11 +14,9 @@ export function Home() {
           Web Developer
         </h3>
       </section>
-
       <WhoAmI />
       <SelectedWorks />
       <Contact />
-
       <ScrollToTopButton/>
     </main>
   );

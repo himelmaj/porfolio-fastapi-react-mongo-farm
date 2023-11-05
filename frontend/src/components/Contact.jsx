@@ -1,6 +1,6 @@
 export function Contact() {
   return (
-    <div className="my-40 grid lg:grid-cols-2 lg:mx-40" id="contact">
+    <section className="my-40 grid lg:grid-cols-2 lg:mx-40" id="contact">
       <div className="px-10 py-10">
         <h3 className="title-font text-6xl mb-5">Get in Touch</h3>
         <p className="mb-15">
@@ -21,6 +21,6 @@ export function Contact() {
           {"submit"}
         </button>
       </form>
-    </div>
+    </section>
   );
 }

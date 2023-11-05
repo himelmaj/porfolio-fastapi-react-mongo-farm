@@ -10,7 +10,7 @@ export function Navigation() {
         <NavLink to="/selectwork" className="font-bold">
           Selected Work
         </NavLink>
-        <NavLink to="/questionform" className="font-bold">
+        <NavLink to="/resume" className="font-bold">
           Resume
         </NavLink>
         <a href="#contact" className="font-bold">
