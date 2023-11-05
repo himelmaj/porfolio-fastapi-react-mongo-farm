@@ -13,9 +13,9 @@ export function Navigation() {
         <NavLink to="/questionform" className="font-bold">
           Resume
         </NavLink>
-        <NavLink to="/questionform" className="font-bold">
+        <a href="#contact" className="font-bold">
           Get in Touch
-        </NavLink>
+        </a>
       </div>
     </nav>
   );
